@@ -1,23 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Nav, NavLi, NavList } from "./Navbar.style";
 
 function Navbar() {
   return (
-    <>
-      <nav className="nagivation">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/invoices">Invoices</Link>
-          </li>
-          <li>
-            <Link to="/expense">Expenses</Link>
-          </li>
-        </ul>
-      </nav>
-    </>
+    <Nav>
+      <NavList>
+        <NavLi>
+          <Link to="/">Home</Link>
+        </NavLi>
+        <NavLi>
+          <Link to="/invoices">Invoices</Link>
+        </NavLi>
+        <NavLi>
+          <Link to="/expense">Expenses</Link>
+        </NavLi>
+      </NavList>
+    </Nav>
   );
 }
 
