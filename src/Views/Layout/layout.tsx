@@ -4,11 +4,11 @@ import Logo from "../Components/Navbar/Logo/Logo";
 import Navbar from "../Components/Navbar/Left/Navbar";
 import FunctionsBtn from "../Components/Navbar/Right/FunctionsBtn";
 import SearchForm from "../Components/Navbar/Search/SearchForm";
-import { Header } from "./Layout.style";
+import { Container, Header } from "./Layout.style";
 
 function Layout() {
   return (
-    <div className="container">
+    <Container>
       <Header>
         <Logo />
         <Navbar />
@@ -19,7 +19,7 @@ function Layout() {
         <Outlet />
       </main>
       <footer></footer>
-    </div>
+    </Container>
   );
 }
 

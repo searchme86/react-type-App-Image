@@ -11,7 +11,7 @@ function Logo() {
           </div>
         </Link>
       </h1>
-      <span className="ddd">로고이미지설명</span>
+      {/* <span className="ddd">로고이미지설명</span> */}
     </div>
   );
 }
