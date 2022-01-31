@@ -1,11 +1,7 @@
 import React from "react";
 
-const Home = () => {
-  return (
-    <div>
-      <h1>Home</h1>
-    </div>
-  );
-};
+function Home() {
+  return <div>Home 페이지 입니다.</div>;
+}
 
 export default Home;

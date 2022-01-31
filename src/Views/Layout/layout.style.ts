@@ -1,1 +1,1 @@
-export const layout = () => "style";
+export const lt = () => "style";

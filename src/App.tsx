@@ -1,13 +1,11 @@
 import React from "react";
-import GlobalStyle from "./Static/Styles/GlobalStyle";
-import Navbar from "./Views/Components/Navbar/Navbar";
+import Router from "./Routes/Router";
 
 function App() {
   return (
-    <div>
-      <GlobalStyle />
-      <Navbar />
-    </div>
+    <>
+      <Router />
+    </>
   );
 }
 
