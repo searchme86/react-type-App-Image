@@ -1,16 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import png from "src/Views/Static/Images/image.png";
+import picture from "../../../Static/Images/image";
 
 function Logo() {
+  console.log(picture);
   return (
     <div style={{ border: "solid" }}>
       <h1>
         <Link to="/">
-          <div>
-            <img src={png} alt="ddd" />
-          </div>
+          <div></div>
         </Link>
       </h1>
       {/* <span className="ddd">로고이미지설명</span> */}
