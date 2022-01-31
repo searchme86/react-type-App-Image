@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import png from "src/Views/Static/Images/image.png";
+
 function Logo() {
   return (
     <div style={{ border: "solid" }}>
       <h1>
         <Link to="/">
           <div>
-            <img alt="ddd" />
+            <img src={png} alt="ddd" />
           </div>
         </Link>
       </h1>
