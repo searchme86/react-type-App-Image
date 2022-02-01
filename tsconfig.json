@@ -15,7 +15,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "typeRoots": ["@types"]
+    "typeRoots": ["@types", "/src/import-png.d.ts"]
   },
   "include": ["src", "Router.ts", "src/import-png.d.ts"]
 }
