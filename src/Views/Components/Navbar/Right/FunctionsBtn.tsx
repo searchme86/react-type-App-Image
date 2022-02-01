@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ButtonCommon } from "../../Button.style";
+import { ButtonNormal } from "../../Button.style";
 import { RNav, RnLi, RnList } from "./FunctionsBtn.style";
 
 function FunctionsBtn() {
@@ -12,7 +12,7 @@ function FunctionsBtn() {
           </RnLi>
         </RnList>
       </RNav>
-      <ButtonCommon>Log in</ButtonCommon>
+      <ButtonNormal>Log in</ButtonNormal>
     </>
   );
 }
