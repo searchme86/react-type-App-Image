@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Dim from "../Components/Popups/Dim";
 import Modal from "../Components/Popups/Modal";
 
@@ -14,6 +14,10 @@ function Register() {
     setModalOpen(false);
   };
 
+  const navigate = useNavigate();
+  const redirect = () => {
+    navigate("/completed");
+  };
   return (
     <div>
       <h1>듣고싶은음악을 넣어주세요</h1>
@@ -23,11 +27,11 @@ function Register() {
         <button style={{ display: "inline-block" }}>입력</button>
       </div>
       <button onClick={openModal}>취소</button>
-      <button>작성</button>
+      <button onClick={redirect}>작성</button>
       <Link to="/">홈으로</Link>
       <div>
         {modalOpen && <Dim />}
-        {modalOpen && <Modal open={openModal} close={closeModal} />}
+        {modalOpen && <Modal close={closeModal} />}
       </div>
     </div>
   );

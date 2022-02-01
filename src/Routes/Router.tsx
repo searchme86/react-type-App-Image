@@ -8,6 +8,7 @@ import Home from "../Views/Pages/Home";
 import Register from "../Views/Pages/Register";
 import Detail from "../Views/Pages/Detail";
 import Specific from "../Views/Pages/Specific";
+import Completed from "../Views/Pages/Competed";
 
 function Router() {
   return (
@@ -18,7 +19,7 @@ function Router() {
         <Route path="detail" element={<Detail />}>
           <Route path=":detailNum" element={<Specific />} />
         </Route>
-
+        <Route path="completed" element={<Completed />} />
         <Route path="expense" element={<Expenses />} />
         <Route path="invoices" element={<Invoices />}>
           <Route path=":invoiceId/*" element={<Invoice />} />
