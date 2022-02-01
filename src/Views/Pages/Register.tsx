@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Dim from "../Components/Popups/Dim";
 import Modal from "../Components/Popups/Modal";
 
 function Register() {
@@ -16,16 +17,18 @@ function Register() {
   return (
     <div>
       <h1>듣고싶은음악을 넣어주세요</h1>
+      <h1>등록을 취소하려면 취소버튼을 클릭해주세요</h1>
       <div>
         <input style={{ display: "inline-block" }} />
         <button style={{ display: "inline-block" }}>입력</button>
       </div>
       <button onClick={openModal}>취소</button>
       <button>작성</button>
-      <Modal open={modalOpen} close={closeModal} header="Modal heading">
-        등록을 정말 취소하시겠습니까??
-      </Modal>
       <Link to="/">홈으로</Link>
+      <div>
+        {modalOpen && <Dim />}
+        {modalOpen && <Modal open={openModal} close={closeModal} />}
+      </div>
     </div>
   );
 }

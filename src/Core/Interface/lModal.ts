@@ -1,6 +1,4 @@
 export interface lModalProps {
-  open: boolean;
+  open: () => void;
   close: () => void;
-  header: string;
-  children: React.ReactNode;
 }

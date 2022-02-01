@@ -2,6 +2,7 @@
 import { lAssets } from "../../../Core/Interface/lData";
 import logo from "./logo.png";
 import RegisterBtn from "./Register.png";
+import AlertBtn from "./Alert.png";
 
 //export a group of assests
 export const LogoImage: lAssets = {
@@ -17,5 +18,13 @@ export const Register: lAssets = {
   info: {
     src: `${RegisterBtn}`,
     alt: "아이템 등록하기",
+  },
+};
+
+export const Alert: lAssets = {
+  name: "Alert",
+  info: {
+    src: `${AlertBtn}`,
+    alt: "경고 이미지",
   },
 };
