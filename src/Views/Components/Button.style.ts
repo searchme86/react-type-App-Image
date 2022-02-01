@@ -6,6 +6,7 @@ export const ButtonCommon = styled.button`
   text-align: center;
   cursor: pointer;
   outline: none;
+  border: none;
 `;
 
 export const ButtonNormal = styled(ButtonCommon)`

@@ -6,13 +6,19 @@ import NotFound from "../Views/Pages/NotFound";
 import Invoice from "../Views/Pages/Invoice";
 import Home from "../Views/Pages/Home";
 import Register from "../Views/Pages/Register";
+import Detail from "../Views/Pages/Detail";
+import Specific from "../Views/Pages/Specific";
 
 function Router() {
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="register" element={<Register />} />
+        <Route path="detail" element={<Detail />}>
+          <Route path=":detailNum" element={<Specific />} />
+        </Route>
+
         <Route path="expense" element={<Expenses />} />
         <Route path="invoices" element={<Invoices />}>
           <Route path=":invoiceId/*" element={<Invoice />} />
