@@ -1,4 +1,4 @@
 export interface lModalProps {
-  open: () => void;
+  open?: () => void;
   close: () => void;
 }
