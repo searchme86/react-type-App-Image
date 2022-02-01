@@ -1,11 +1,5 @@
 import styled from "styled-components";
 
-export const Rcontainer = styled.div`
-  position: absolute;
-  top: 20px;
-  right: 40px;
-`;
-
 export const RNav = styled.nav`
   background: red;
 `;

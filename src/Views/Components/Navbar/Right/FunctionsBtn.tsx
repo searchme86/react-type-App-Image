@@ -1,20 +1,19 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import { Rcontainer, RNav, RnLi, RnList } from "./FunctionsBtn.style";
+import { ButtonCommon } from "../../Button.style";
+import { RNav, RnLi, RnList } from "./FunctionsBtn.style";
 
 function FunctionsBtn() {
   return (
-    <Rcontainer>
+    <>
       <RNav>
         <RnList>
           <RnLi>
-            <Link to="/home">
-              <button>Login</button>
-            </Link>
+            <Link to="/home"></Link>
           </RnLi>
         </RnList>
       </RNav>
-    </Rcontainer>
+      <ButtonCommon>Log in</ButtonCommon>
+    </>
   );
 }
 

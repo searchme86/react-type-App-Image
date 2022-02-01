@@ -1,19 +1,20 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
 import Logo from "../Components/Navbar/Logo/Logo";
 import Navbar from "../Components/Navbar/Left/Navbar";
 import FunctionsBtn from "../Components/Navbar/Right/FunctionsBtn";
-import SearchForm from "../Components/Navbar/Search/SearchForm";
-import { Container, Header } from "./layout.style";
+import { Container, Header, HLeftSection, HRightSection } from "./layout.style";
 
 function Layout() {
   return (
     <Container>
       <Header>
-        <Logo />
-        <Navbar />
-        <SearchForm />
-        <FunctionsBtn />
+        <HLeftSection>
+          <Logo />
+          <Navbar />
+        </HLeftSection>
+        <HRightSection>
+          <FunctionsBtn />
+        </HRightSection>
       </Header>
       <main>
         <Outlet />

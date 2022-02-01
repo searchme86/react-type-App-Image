@@ -1,15 +1,7 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  max-width: 1440px;
-  width: 1440px;
-  margin: 0 auto;
-  border: 1px solid red;
-`;
-
-export const Header = styled.header`
-  display: flex;
-  position: relative;
-  width: 100%;
-  background: yellow;
+export const LogoWrapper = styled.div`
+  width: 32px;
+  height: 32px;
+  margin: 0 30px 0 0;
 `;

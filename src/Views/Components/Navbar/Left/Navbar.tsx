@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { Nav, NavLi, NavList } from "./Navbar.style";
 
@@ -7,7 +6,7 @@ function Navbar() {
     <Nav>
       <NavList>
         <NavLi>
-          <Link to="/">Home</Link>
+          <Link to="/">홈</Link>
         </NavLi>
         <NavLi>
           <Link to="/invoices">Invoices</Link>
