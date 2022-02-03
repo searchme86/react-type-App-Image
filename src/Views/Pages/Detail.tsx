@@ -13,12 +13,15 @@ function Detail() {
           <br />
           <br />
           <Link to="/modify">수정</Link>
+          <p>수정 버튼을 누르면, 수정 페이지로 이동합니다.</p>
           <br />
           <br />
           <Link to="/">삭제</Link>
+          <p>삭제버튼을 누르면 어떻게 해야하나요,,,,,</p>
           <br />
           <br />
           <Link to="/Mypage">나의 히스토리</Link>
+          <p>내가 작성한 모든 글의 히스토리를 볼 수 있습니다.</p>
           <br />
           <br />
         </div>
