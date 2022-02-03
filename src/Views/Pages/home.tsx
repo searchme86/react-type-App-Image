@@ -16,8 +16,8 @@ import {
   SearchBar,
 } from "./Home.style";
 
-import faker from "@faker-js/faker";
-import { Img, ImgWrapper } from "../Components/PIcture.style";
+import { DivLinkWrapper, Img, ImgWrapper } from "../Components/PIcture.style";
+import { HomeData } from "../../Core/Constant/Data";
 
 function Home() {
   let navigate = useNavigate();
@@ -57,62 +57,20 @@ function Home() {
       </Category>
       <ItemWrapper>
         <ItemList>
-          <ItemLi>
-            <Item>
-              <ImgWrapper>
-                <Img src={faker.image.food()} />
-              </ImgWrapper>
-            </Item>
-          </ItemLi>
-          <ItemLi>
-            <Item>
-              <ImgWrapper>
-                <Img src={faker.image.nature()} />
-              </ImgWrapper>
-            </Item>
-          </ItemLi>
-          <ItemLi>
-            <Item>
-              <ImgWrapper>
-                <Img src={faker.image.animals()} />
-              </ImgWrapper>
-            </Item>
-          </ItemLi>
-          <ItemLi>
-            <Item>
-              <ImgWrapper>
-                <Img src={faker.image.city()} />
-              </ImgWrapper>
-            </Item>
-          </ItemLi>
-          <ItemLi>
-            <Item>
-              <ImgWrapper>
-                <Img src={faker.image.cats()} />
-              </ImgWrapper>
-            </Item>
-          </ItemLi>
-          <ItemLi>
-            <Item>
-              <ImgWrapper>
-                <Img src={faker.image.technics()} />
-              </ImgWrapper>
-            </Item>
-          </ItemLi>
-          <ItemLi>
-            <Item>
-              <ImgWrapper>
-                <Img src={faker.image.transport()} />
-              </ImgWrapper>
-            </Item>
-          </ItemLi>
-          <ItemLi>
-            <Item>
-              <ImgWrapper>
-                <Img src={faker.image.abstract()} />
-              </ImgWrapper>
-            </Item>
-          </ItemLi>
+          {HomeData.map((data) => {
+            return (
+              <ItemLi key={data?.id}>
+                <DivLinkWrapper to={`/detail/${data?.itemIdx}`}>
+                  <Item>
+                    <ImgWrapper>
+                      <Img src={data?.video} />
+                    </ImgWrapper>
+                    <p>{data?.videoTitle}</p>
+                  </Item>
+                </DivLinkWrapper>
+              </ItemLi>
+            );
+          })}
         </ItemList>
       </ItemWrapper>
 

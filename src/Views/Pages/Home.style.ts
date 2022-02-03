@@ -25,7 +25,6 @@ export const CategoryLi = styled.li`
 export const ItemWrapper = styled.div`
   width: 1035px;
   margin: 0 auto;
-  background: yellow;
 `;
 
 export const ItemList = styled.ul`
@@ -39,7 +38,6 @@ export const ItemLi = styled.li`
   &:nth-child(4n) {
     margin-right: 0;
   }
-  /* display: inline-block; */
 `;
 
 export const Item = styled.div`

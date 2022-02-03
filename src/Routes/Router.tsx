@@ -7,7 +7,6 @@ import Invoice from "../Views/Pages/Invoice";
 import Home from "../Views/Pages/Home";
 import Register from "../Views/Pages/Register";
 import Detail from "../Views/Pages/Detail";
-import Specific from "../Views/Pages/Specific";
 import Completed from "../Views/Pages/Competed";
 
 function Router() {
@@ -16,9 +15,10 @@ function Router() {
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="register" element={<Register />} />
-        <Route path="detail" element={<Detail />}>
-          <Route path=":detailNum" element={<Specific />} />
+        <Route path="detail">
+          <Route path=":itemIdx" element={<Detail />} />
         </Route>
+
         <Route path="completed" element={<Completed />} />
         <Route path="expense" element={<Expenses />} />
         <Route path="invoices" element={<Invoices />}>
