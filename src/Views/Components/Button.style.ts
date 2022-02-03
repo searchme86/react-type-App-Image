@@ -9,6 +9,18 @@ export const ButtonCommon = styled.button`
   border: none;
 `;
 
+export const MainSearchBtn = styled(ButtonCommon)`
+  width: calc(100% - 681px);
+  color: #fff;
+  background: #597ef7;
+`;
+
+export const MainCategoryBtn = styled(ButtonCommon)`
+  width: 88px;
+  height: 28px;
+  border-radius: 2px;
+`;
+
 export const ButtonModal = styled(ButtonCommon)`
   width: 84px;
   height: 32px;
