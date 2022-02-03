@@ -32,8 +32,3 @@ export const HRightSection = styled(HeaderCommon)`
   top: 16px;
   right: 40px;
 `;
-
-export const HomeContent = styled.div`
-  width: 1035px;
-  margin: 0 auto;
-`;

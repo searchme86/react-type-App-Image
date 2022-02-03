@@ -10,7 +10,7 @@ export const SearchBar = styled.div`
 
 export const Category = styled.div`
   width: 608px;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
 `;
 
 export const CategoryList = styled.ul`
@@ -20,10 +20,28 @@ export const CategoryList = styled.ul`
 
 export const CategoryLi = styled.li`
   margin: 0 16px 0 0;
-  &:first-child {
-    margin-left: 0;
-  }
-  &:last-child {
+`;
+
+export const ItemWrapper = styled.div`
+  width: 1035px;
+  margin: 0 auto;
+  background: yellow;
+`;
+
+export const ItemList = styled.ul`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const ItemLi = styled.li`
+  margin: 0 25px 0 0;
+  &:nth-child(4n) {
     margin-right: 0;
   }
+  /* display: inline-block; */
+`;
+
+export const Item = styled.div`
+  width: 240px;
 `;

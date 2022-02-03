@@ -39,6 +39,9 @@ export const ButtonNormal = styled(ButtonCommon)`
 `;
 
 export const CircleBtn = styled(ButtonCommon)`
+  position: fixed;
+  right: 114px;
+  bottom: 65px;
   width: 50px;
   height: 50px;
   border-radius: 100%;
