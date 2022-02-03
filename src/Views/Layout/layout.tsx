@@ -26,11 +26,14 @@ function Layout() {
           </Content>
         </Header>
       </HeaderSection>
-
       <main>
-        <Outlet />
+        <Content>
+          <Outlet />
+        </Content>
       </main>
-      <footer>footer 입니다</footer>
+      <footer>
+        <Content>footer 입니다</Content>
+      </footer>
     </>
   );
 }
