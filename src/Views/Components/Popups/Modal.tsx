@@ -15,7 +15,7 @@ import { useNavigate } from "react-router-dom";
 function Modal({ close }: lModalProps) {
   const navigate = useNavigate();
   const redirect = () => {
-    navigate("/home");
+    navigate("/");
   };
   return (
     <ModalWrapper>
