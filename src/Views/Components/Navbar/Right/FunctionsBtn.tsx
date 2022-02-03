@@ -1,17 +1,17 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { ButtonNormal } from "../../Button.style";
-import { RNav, RnLi, RnList } from "./FunctionsBtn.style";
+// import { RNav, RnLi, RnList } from "./FunctionsBtn.style";
 
 function FunctionsBtn() {
   return (
     <>
-      <RNav>
+      {/* <RNav>
         <RnList>
           <RnLi>
             <Link to="/home"></Link>
           </RnLi>
         </RnList>
-      </RNav>
+      </RNav> */}
       <ButtonNormal>Log in</ButtonNormal>
     </>
   );

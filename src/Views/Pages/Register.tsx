@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Dim from "../Components/Popups/Dim";
 import Modal from "../Components/Popups/Modal";
+import { PageContentWrapper } from "../Layout/layout.style";
 
 function Register() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -19,7 +20,7 @@ function Register() {
     navigate("/completed");
   };
   return (
-    <div>
+    <PageContentWrapper>
       <h1>듣고싶은음악을 넣어주세요</h1>
       <h1>등록을 취소하려면 취소버튼을 클릭해주세요</h1>
       <div>
@@ -33,7 +34,7 @@ function Register() {
         {modalOpen && <Dim />}
         {modalOpen && <Modal close={closeModal} />}
       </div>
-    </div>
+    </PageContentWrapper>
   );
 }
 

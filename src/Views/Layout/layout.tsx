@@ -31,9 +31,6 @@ function Layout() {
           <Outlet />
         </Content>
       </main>
-      <footer>
-        <Content>footer 입니다</Content>
-      </footer>
     </>
   );
 }

@@ -32,3 +32,9 @@ export const HRightSection = styled(HeaderCommon)`
   top: 16px;
   right: 40px;
 `;
+
+export const PageContentWrapper = styled.div`
+  width: 480px;
+  margin: 58px auto 0 auto;
+  background: yellow;
+`;

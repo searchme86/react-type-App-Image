@@ -8,12 +8,12 @@ function Navbar() {
         <NavLi>
           <Link to="/">홈</Link>
         </NavLi>
-        <NavLi>
+        {/* <NavLi>
           <Link to="/invoices">Invoices</Link>
         </NavLi>
         <NavLi>
           <Link to="/expense">Expenses</Link>
-        </NavLi>
+        </NavLi> */}
       </NavList>
     </Nav>
   );

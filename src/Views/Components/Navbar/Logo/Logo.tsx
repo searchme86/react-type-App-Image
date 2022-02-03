@@ -6,13 +6,11 @@ import { LogoWrapper } from "./Logo.style";
 function Logo() {
   return (
     <LogoWrapper>
-      <h1>
-        <DivLinkWrapper to="/">
-          <ImgWrapper>
-            <Img src={LogoImage.info.src} alt={LogoImage.info.alt} />
-          </ImgWrapper>
-        </DivLinkWrapper>
-      </h1>
+      <DivLinkWrapper to="/">
+        <ImgWrapper>
+          <Img src={LogoImage.info.src} alt={LogoImage.info.alt} />
+        </ImgWrapper>
+      </DivLinkWrapper>
     </LogoWrapper>
   );
 }

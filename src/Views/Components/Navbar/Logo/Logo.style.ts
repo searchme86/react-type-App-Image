@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-export const LogoWrapper = styled.div`
-  width: 32px;
-  height: 32px;
-  margin: 0 30px 0 0;
+export const LogoWrapper = styled.h1`
+  width: 56px;
+  margin: 0 10px 0 0;
 `;
