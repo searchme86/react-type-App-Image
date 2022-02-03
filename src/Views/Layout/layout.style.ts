@@ -1,31 +1,39 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  max-width: 1440px;
-  width: 1440px;
-  margin: 0 auto;
-  border: 1px solid red;
-`;
-
-const HeaderSection = styled.div`
+//공통
+const HeaderCommon = styled.div`
   display: flex;
   position: absolute;
 `;
 
-export const Header = styled.header`
+export const Content = styled.div`
   position: relative;
-  width: 100%;
-  height: 64px;
-  background: yellow;
+  max-width: 1440px;
+  width: 1440px;
+  margin: 0 auto;
 `;
 
-export const HLeftSection = styled(HeaderSection)`
+export const HeaderSection = styled.div`
+  width: 100%;
+  box-shadow: 0px 2px 8px #f0f1f2;
+`;
+
+export const Header = styled.header`
+  position: relative;
+  height: 64px;
+`;
+
+export const HLeftSection = styled(HeaderCommon)`
   top: 16px;
   left: 40px;
 `;
 
-export const HRightSection = styled(HeaderSection)`
+export const HRightSection = styled(HeaderCommon)`
   top: 16px;
   right: 40px;
-  border: 1px solid red;
+`;
+
+export const HomeContent = styled.div`
+  width: 1035px;
+  margin: 0 auto;
 `;

@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     optgroup { font-weight: bold; }
     table { border-collapse: collapse; border-spacing: 0; }
     td, th { padding: 0; }
-    main,nav,footer{display:block;}
+    main,nav,footer{display:block; width:100%;}
 `;
 
 export default GlobalStyle;
