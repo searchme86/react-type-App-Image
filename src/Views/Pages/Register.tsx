@@ -32,7 +32,9 @@ function Register() {
       <Link to="/">홈으로</Link>
       <div>
         {modalOpen && <Dim />}
-        {modalOpen && <Modal close={closeModal} />}
+        {modalOpen && (
+          <Modal close={closeModal}>정말 등록을 취소하시겠습니까?</Modal>
+        )}
       </div>
     </PageContentWrapper>
   );

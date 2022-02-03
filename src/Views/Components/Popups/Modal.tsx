@@ -12,7 +12,7 @@ import {
 
 import { useNavigate } from "react-router-dom";
 
-function Modal({ close }: lModalProps) {
+function Modal({ close, children }: lModalProps) {
   const navigate = useNavigate();
   const redirect = () => {
     navigate("/");
@@ -25,7 +25,7 @@ function Modal({ close }: lModalProps) {
         </ImgWrapper>
       </ModalImgWrapper>
       <ModalContent>
-        <ModalTitle>정말로 등록을 취소하시겠습니까?</ModalTitle>
+        <ModalTitle>{children}</ModalTitle>
         <ModalButtons>
           <ModalCancel onClick={redirect}>예</ModalCancel>
           <ModalConfirm onClick={close}>아니오</ModalConfirm>
