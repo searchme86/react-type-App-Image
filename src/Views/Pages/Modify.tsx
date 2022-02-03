@@ -1,7 +1,11 @@
 import { PageContentWrapper } from "../Layout/layout.style";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Modify() {
+  const navigate = useNavigate();
+  const onDismiss = () => {
+    navigate(-1);
+  };
   return (
     <>
       <PageContentWrapper>
@@ -9,10 +13,11 @@ function Modify() {
         <div>
           <br />
           <br />
-          <Link to="/">취소</Link>
+          <button onClick={onDismiss}>취소</button>
           <br />
           <br />
-          <Link to="/">수정</Link>
+          <button onClick={onDismiss}>수정</button>
+
           <br />
           <br />
         </div>

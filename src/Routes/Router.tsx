@@ -9,6 +9,7 @@ import Register from "../Views/Pages/Register";
 import Detail from "../Views/Pages/Detail";
 import Completed from "../Views/Pages/Competed";
 import Modify from "../Views/Pages/Modify";
+import Mypage from "../Views/Pages/Mypage";
 
 function Router() {
   return (
@@ -21,6 +22,7 @@ function Router() {
         </Route>
         <Route path="modify" element={<Modify />} />
         <Route path="completed" element={<Completed />} />
+        <Route path="mypage" element={<Mypage />} />
         <Route path="*" element={<NotFound />} />
         {/* <Route path="expense" element={<Expenses />} />
         <Route path="invoices" element={<Invoices />}>

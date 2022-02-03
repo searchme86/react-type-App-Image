@@ -18,6 +18,9 @@ function Detail() {
           <Link to="/">삭제</Link>
           <br />
           <br />
+          <Link to="/Mypage">나의 히스토리</Link>
+          <br />
+          <br />
         </div>
         <div>추천음악 슬라이더 부분입니다</div>
         <div>
